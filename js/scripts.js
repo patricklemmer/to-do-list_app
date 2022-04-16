@@ -1,1 +1,3 @@
-// Begin
+function newItem() {
+
+}
