@@ -28,4 +28,7 @@ function newItem() {
   function deleteListItem() {
     li.addClass('delete')
   }
+
+  //Reordering items
+  $('#list').sortable();
 }
