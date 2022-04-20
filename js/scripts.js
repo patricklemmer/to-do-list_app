@@ -1,3 +1,8 @@
+// Diables form default behaviour of refreshing on click of enter
+$('#button').on('click', function (e) {
+  e.preventDefault();
+});
+
 function newItem() {
   //Adds a new item to the list of items
   let li = $('<li></li>');
