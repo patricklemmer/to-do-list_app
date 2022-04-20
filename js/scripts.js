@@ -6,7 +6,8 @@ $('#button').on('click', function (e) {
 function newItem() {
   //Adds a new item to the list of items
   let li = $('<li></li>');
-  let inputValue = $('#input').val();
+  let input = $('#input');
+  let inputValue = input.val();
   li.append(inputValue);
 
   if (inputValue === '') {
@@ -36,4 +37,7 @@ function newItem() {
 
   //Reordering items
   $('#list').sortable();
+
+  //Reset the input field
+  input.val('');
 }
